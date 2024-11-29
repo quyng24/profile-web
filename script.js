@@ -78,37 +78,37 @@ tabs.forEach((tab, index) => {
 const projects1 = [
     {
         title: 'Sales Website',
-        img: './sales-website.png',
+        img: './img/sales-website.png',
         description: 'The sales website interface is similar to shoppe',
         link: 'https://github.com/quyng24/web-gogo'
     },
     {
         title: 'Moving Planet',
-        img: './hanh-tinh.png',
+        img: './img/hanh-tinh.png',
         description: 'Use css to create moving planet',
         link: 'https://github.com/quyng24/hanhtinh'
     },
     {
         title: 'Electronic Clock',
-        img: './electric-clock.png',
+        img: './img/electric-clock.png',
         description: 'Update current time',
         link: 'https://github.com/quyng24/mhdh'
     },
     {
         title: 'Peguin',
-        img: './peguin-css.png',
+        img: './img/peguin-css.png',
         description: 'Use CSS create a peguin waved',
         link: 'https://github.com/quyng24/peguin'
     }, 
     {
         title: 'Flag Viet Nam',
-        img: './co-vn.png',
+        img: './img/co-vn.png',
         description: 'Some flag samples Viet Nam beautiful',
         link: 'https://github.com/quyng24/co-vn'
     },
     {
         title: 'Pain App',
-        img: './pain-app.png',
+        img: './img/pain-app.png',
         description: 'Use cavas in JavaScript to create Pain App',
         link: 'https://github.com/quyng24/pain-app'
     }
@@ -116,37 +116,37 @@ const projects1 = [
 const projects2 = [
     {
         title: 'Calculator App',
-        img: './calculator-app.png',
+        img: './img/calculator-app.png',
         description: 'Use JavaScript to create Calculator App Basic',
         link: 'https://github.com/quyng24/calculator'
     },
     {
         title: 'Christmas Tree',
-        img: './merry-christmas.png',
+        img: './img/merry-christmas.png',
         description: 'Use JavaScript to create Christmas Tree',
         link: 'https://github.com/quyng24/merry-christmas'
     },
     {
         title: 'Weather App',
-        img: './weather-app-mrquy.png',
+        img: './img/weather-app-mrquy.png',
         description: 'Use JavaScript to create Weather App',
         link: 'https://github.com/quyng24/weather-app-mrquy'
     },
     {
         title: 'Music App',
-        img: './music-app-mrquy.png',
+        img: './img/music-app-mrquy.png',
         description: 'Use JavaScript to create Music App',
         link: 'https://github.com/quyng24/music-app-mrquy'
     },
     {
         title: 'Game Tetris',
-        img: './game-tetris.png',
+        img: './img/game-tetris.png',
         description: 'Use JavaScript to create Game Tetris',
         link: 'https://github.com/quyng24/game-tetris'
     },
     {
         title: 'Game Flappy Brith',
-        img: './flappy-brith.png',
+        img: './img/flappy-brith.png',
         description: 'Use Python3 to create Game Flappy Brith',
         link: 'https://github.com/quyng24/flappy-bird-game'
     },

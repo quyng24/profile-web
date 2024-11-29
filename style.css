@@ -165,7 +165,7 @@ body.dark {
 .img-home {
     width: 40%;
     height: 60vh;
-    background-image: url(./imgstory.jpeg);
+    background-image: url(./img/imgstory.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -173,6 +173,12 @@ body.dark {
 /* content about me */
 #about {
     border-bottom: 2px solid var(--side-bar);
+}
+.img-about {
+    background-image: url(./img/imgstory.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 #about .text-about-me {
     font-size: 60px;
