@@ -483,22 +483,21 @@ body.dark {
 
 /* animation class .content-about */
 .left-to-right {
-    clip-path: inset(0 100% 0 0); /* Cắt toàn bộ từ bên phải */
+    transform: translateX(-150%);
+    transition: 1s;
     opacity: 0;
-    transition: clip-path 1s, opacity 1s;
 }
 .left-to-right.start {
-    clip-path: inset(0 0 0 0); /* Hiển thị toàn bộ */
+    transform: translateX(0);
     opacity: 1;
 }
-
 .right-to-left {
-    clip-path: inset(0 0 0 100%); /* Cắt toàn bộ từ bên trái */
+    transform: translateX(500%);
+    transition: 1s;
     opacity: 0;
-    transition: clip-path 1s, opacity 1s;
 }
 .right-to-left.start {
-    clip-path: inset(0 0 0 0); /* Hiển thị toàn bộ */
+    transform: translateX(0);
     opacity: 1;
 }
 .top-to-bottom {
@@ -607,7 +606,7 @@ body.dark {
     }
     .content-about .text-content-about {
         width: 100%;
-        padding: 0 20px;
+        padding: 10px 20px;
     }
     .text-content-about a {
         font-size: 16px;
@@ -621,5 +620,50 @@ body.dark {
     .skill-item {
         margin: 0;
         padding: 0 20px;
+    }
+    /* animation  */
+    .top-to-bottom {
+        transform: translateY(-200%);
+        transition: 1s;
+        opacity: 0;
+    }
+    .top-to-bottom.start {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    .bottom-to-top {
+        transform: translateY(200%);
+        transition: 0.5s;
+        opacity: 0;
+    }
+    .bottom-to-top.start {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    .left-to-right {
+        clip-path: inset(0 100% 0 0); /* Cắt toàn bộ từ bên phải */
+        opacity: 0;
+        transition: clip-path 2s, opacity 2s;
+    }
+    .left-to-right.start {
+        clip-path: inset(0 0 0 0); /* Hiển thị toàn bộ */
+        opacity: 1;
+    }
+    
+    .right-to-left {
+        clip-path: inset(0 0 0 100%); /* Cắt toàn bộ từ bên trái */
+        opacity: 0;
+        transition: clip-path 2s, opacity 2s;
+    }
+    .right-to-left.start {
+        clip-path: inset(0 0 0 0); /* Hiển thị toàn bộ */
+        opacity: 1;
+    }
+    .zoom {
+        transform: scale(0);
+        transition: 1s;
+    }
+    .zoom.start {
+        transform: scale(1);
     }
 }

@@ -155,7 +155,7 @@ const projectContainer1 = document.querySelector('.projects-1');
 const projectContainer2 = document.querySelector('.projects-2');
 projects1.forEach(project => {
     const ProjectCard = `
-        <div class="project-card">
+        <div class="project-card show-on-scroll zoom">
             <h2>${project.title}</h2>
             <img src="${project.img}">
             <p>${project.description}</p>
@@ -166,7 +166,7 @@ projects1.forEach(project => {
 });
 projects2.forEach(project => {
     const ProjectCard = `
-        <div class="project-card">
+        <div class="project-card show-on-scroll zoom">
             <h2>${project.title}</h2>
             <img src="${project.img}">
             <p>${project.description}</p>
