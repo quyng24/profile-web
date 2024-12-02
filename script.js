@@ -193,6 +193,7 @@ if (window.matchMedia("(max-width: 768px)").matches) {
         list.addEventListener('click', () => {
             siderBarMobile.style.transform = 'translateX(-120%)';
             btnOpenSiderBar.style.display = 'flex';
+            btnOpenSiderBar.style.opaCity = '0';
         })
     })
 } else {

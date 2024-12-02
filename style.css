@@ -114,7 +114,6 @@ body.dark {
 }
 /* content home */
 #home {
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -165,16 +164,20 @@ body.dark {
 .img-home {
     width: 40%;
     height: 60vh;
-    background-image: url(./img/imgstory.jpeg);
+    margin: 0 20px;
+    border-radius: 20px;
+    background-image: url(./img/avata-1.PNG);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 /* content about me */
 #about {
     border-bottom: 2px solid var(--side-bar);
 }
 .img-about {
+    width: 50%;
+    height: 100%;
     background-image: url(./img/imgstory.jpeg);
     background-position: center;
     background-repeat: no-repeat;
@@ -198,6 +201,9 @@ body.dark {
 }
 .content-about .img-about {
     width: 40%;
+    margin: 0 20px;
+    border-radius: 20px;
+    background-size: cover;
 }
 .content-about .text-content-about {
     width: 60%;
@@ -483,21 +489,22 @@ body.dark {
 
 /* animation class .content-about */
 .left-to-right {
-    transform: translateX(-150%);
-    transition: 1s;
+    clip-path: inset(0 100% 0 0); /* Cắt toàn bộ từ bên phải */
     opacity: 0;
+    transition: clip-path 2s, opacity 2s;
 }
 .left-to-right.start {
-    transform: translateX(0);
+    clip-path: inset(0 0 0 0); /* Hiển thị toàn bộ */
     opacity: 1;
 }
+
 .right-to-left {
-    transform: translateX(500%);
-    transition: 1s;
+    clip-path: inset(0 0 0 100%); /* Cắt toàn bộ từ bên trái */
     opacity: 0;
+    transition: clip-path 2s, opacity 2s;
 }
 .right-to-left.start {
-    transform: translateX(0);
+    clip-path: inset(0 0 0 0); /* Hiển thị toàn bộ */
     opacity: 1;
 }
 .top-to-bottom {
@@ -584,7 +591,9 @@ body.dark {
         padding: 0 10px;
     }
     .img-home {
+        width: 80%;
         height: 50vh;
+        margin: 20% 0;
     }
     .open-sider-bar {
         display: flex;
@@ -599,11 +608,14 @@ body.dark {
         left: 5%;
         border-radius: 10px;
     }
-    .img-about {
+    .content-about .img-about {
+        width: 90%;
+        height: 50vh;
+        border-radius: 20px;
         background-image: url(./img/imgstory.jpeg);
         background-position: center;
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
     }
     .content-about {
         display: flex;
@@ -624,6 +636,9 @@ body.dark {
     .languages-and-software img {
         width: 50px;
         height: 50px;
+    }
+    .text-of-skill {
+        animation: lr-mobile 1s ease-in-out;
     }
     .skill-item {
         margin: 0;
