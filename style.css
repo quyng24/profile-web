@@ -118,7 +118,7 @@ body.dark {
     justify-content: center;
     align-items: center;
     border-bottom: 2px solid var(--side-bar);
-    padding-bottom: 50px;
+    padding: 50px 0;
 }
 .content-home {
     width: 60%;
