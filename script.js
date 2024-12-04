@@ -179,21 +179,20 @@ projects2.forEach(project => {
 const btnOpenSiderBar = $('.open-sider-bar');
 const siderBarMobile = $('.side-bar');
 btnOpenSiderBar.addEventListener('click', () => {
-    siderBarMobile.style.transform = 'translateX(0)';
+    siderBarMobile.classList.add('open');
     btnOpenSiderBar.style.display = 'none';
 });
 //close sidebar mobile
 const closeSiderBar = $('.btn-close')
 closeSiderBar.addEventListener('click', () => {
-    siderBarMobile.style.transform = 'translateX(-120%)';
     btnOpenSiderBar.style.display = 'flex';
+    siderBarMobile.classList.remove('open');
 });
 if (window.matchMedia("(max-width: 768px)").matches) {
     listA.forEach(list => {
         list.addEventListener('click', () => {
-            siderBarMobile.style.transform = 'translateX(-120%)';
             btnOpenSiderBar.style.display = 'flex';
-            btnOpenSiderBar.style.opaCity = '0';
+            siderBarMobile.classList.remove('open');
         })
     })
 } else {

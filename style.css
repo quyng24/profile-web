@@ -170,6 +170,7 @@ body.dark {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    box-shadow: 0 0 30px var(--side-bar);
 }
 /* content about me */
 #about {
@@ -178,13 +179,15 @@ body.dark {
 .img-about {
     width: 50%;
     height: 100%;
+    border-radius: 20px;
+    margin: 0 50px;
     background-image: url(./img/imgstory.jpeg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
 }
 #about .text-about-me {
-    font-size: 60px;
+    font-size: 50px;
     margin: 25px 0 50px 50px;
 }
 .content-about {
@@ -198,12 +201,6 @@ body.dark {
 }
 .text-content-about p {
     font-size: 20px;
-}
-.content-about .img-about {
-    width: 40%;
-    margin: 0 20px;
-    border-radius: 20px;
-    background-size: cover;
 }
 .content-about .text-content-about {
     width: 60%;
@@ -230,6 +227,10 @@ body.dark {
     font-size: 20px;
     font-weight: bold;
     transform: scale(90%);
+}
+.text-about-me-2 {
+    font-size: 30px;
+    margin: 10% 4%;
 }
 .languages-and-software {
     display: flex;
@@ -555,13 +556,14 @@ body.dark {
 }
 @media (max-width: 768px) {
     .side-bar {
-        transform: translateX(-120%);
         position: absolute;
-        width: 70%;
+        width: 0;
+        opacity: 0;
         transition: 0.5s ease-in-out;
     }
-    .side-bar:focus {
-        transform: translateX(-120%);
+    .side-bar.open {
+        width: 70%;
+        opacity: 1;
     }
     .side-bar .heading-sider-bar {
         display: flex;
@@ -570,6 +572,9 @@ body.dark {
     }
     .side-bar .heading-sider-bar h2 {
         font-size: 30px;
+    }
+    .side-bar ul a li.selected-list {
+        border-radius: 0;
     }
     .btn-close {
         display: block;
@@ -633,9 +638,12 @@ body.dark {
         padding: 10px 20px;
         margin-right: 20px;
     }
+    .languages-and-software {
+        margin: 0 10px;
+    }
     .languages-and-software img {
-        width: 50px;
-        height: 50px;
+        width: 70px;
+        height: 70px;
     }
     .text-of-skill {
         animation: lr-mobile 1s ease-in-out;
