@@ -98,6 +98,13 @@ const projects1 = [
         linl2: 'https://co-vn.vercel.app/'
     },
     {
+        title: 'To Do List',
+        img: './img/to-do-list.png',
+        description: 'Create a to do list with basic functions of adding, editing, and deleting',
+        link: 'https://github.com/quyng24/to-do-list',
+        link2: 'https://to-do-list-iota-taupe.vercel.app/'
+    },
+    {
         title: 'Calculator App',
         img: './img/calculator-app.png',
         description: 'Use JavaScript to create Calculator App Basic',
@@ -110,13 +117,6 @@ const projects1 = [
         description: 'Use cavas in JavaScript to create Pain App',
         link: 'https://github.com/quyng24/pain-app',
         link2: 'https://paint-app-six.vercel.app/'
-    },
-    {
-        title: 'Heart Animation',
-        img: './img/tym-js.png',
-        description: 'Use cavas in JavaScript to create Heart Animation',
-        link: 'https://github.com/quyng24/tym1',
-        link2: 'https://tym1.vercel.app/'
     }
 ]
 const projects2 = [
