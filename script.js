@@ -77,79 +77,91 @@ tabs.forEach((tab, index) => {
 // show project
 const projects1 = [
     {
-        title: 'Sales Website',
-        img: './img/sales-website.png',
-        description: 'The sales website interface is similar to shoppe',
-        link: 'https://github.com/quyng24/web-gogo'
-    },
-    {
         title: 'Moving Planet',
         img: './img/hanh-tinh.png',
         description: 'Use css to create moving planet',
-        link: 'https://github.com/quyng24/hanhtinh'
+        link: 'https://github.com/quyng24/hanhtinh',
+        link2: 'https://hanhtinh.vercel.app/'
     },
     {
         title: 'Electronic Clock',
         img: './img/electric-clock.png',
         description: 'Update current time',
-        link: 'https://github.com/quyng24/mhdh'
+        link: 'https://github.com/quyng24/mhdh',
+        link2: 'https://mhdh-brown.vercel.app/'
     },
-    {
-        title: 'Peguin',
-        img: './img/peguin-css.png',
-        description: 'Use CSS create a peguin waved',
-        link: 'https://github.com/quyng24/peguin'
-    }, 
     {
         title: 'Flag Viet Nam',
         img: './img/co-vn.png',
         description: 'Some flag samples Viet Nam beautiful',
-        link: 'https://github.com/quyng24/co-vn'
+        link: 'https://github.com/quyng24/co-vn',
+        linl2: 'https://co-vn.vercel.app/'
+    },
+    {
+        title: 'Calculator App',
+        img: './img/calculator-app.png',
+        description: 'Use JavaScript to create Calculator App Basic',
+        link: 'https://github.com/quyng24/calculator',
+        link2: 'https://calculator-six-gilt-86.vercel.app/'
     },
     {
         title: 'Pain App',
         img: './img/pain-app.png',
         description: 'Use cavas in JavaScript to create Pain App',
-        link: 'https://github.com/quyng24/pain-app'
+        link: 'https://github.com/quyng24/pain-app',
+        link2: 'https://paint-app-six.vercel.app/'
+    },
+    {
+        title: 'Heart Animation',
+        img: './img/tym-js.png',
+        description: 'Use cavas in JavaScript to create Heart Animation',
+        link: 'https://github.com/quyng24/tym1',
+        link2: 'https://tym1.vercel.app/'
     }
 ]
 const projects2 = [
     {
-        title: 'Calculator App',
-        img: './img/calculator-app.png',
-        description: 'Use JavaScript to create Calculator App Basic',
-        link: 'https://github.com/quyng24/calculator'
+        title: 'Game TicTacToe',
+        img: './img/game-tictactoe.png',
+        description: 'Use JavaScript to create Game TicTacToe',
+        link: 'https://github.com/quyng24/game-tictactoe',
+        link2: 'https://game-tictactoe-one.vercel.app/'
     },
     {
         title: 'Christmas Tree',
         img: './img/merry-christmas.png',
         description: 'Use JavaScript to create Christmas Tree',
-        link: 'https://github.com/quyng24/merry-christmas'
+        link: 'https://github.com/quyng24/merry-christmas',
+        link2: 'https://merry-christmas-six-beige.vercel.app/'
     },
     {
         title: 'Weather App',
         img: './img/weather-app-mrquy.png',
         description: 'Use JavaScript to create Weather App',
-        link: 'https://github.com/quyng24/weather-app-mrquy'
+        link: 'https://github.com/quyng24/weather-app-mrquy',
+        link2: 'https://weather-app-mrquy.vercel.app/'
     },
     {
         title: 'Music App',
         img: './img/music-app-mrquy.png',
         description: 'Use JavaScript to create Music App',
-        link: 'https://github.com/quyng24/music-app-mrquy'
+        link: 'https://github.com/quyng24/music-app-mrquy',
+        link2: 'https://music-app-mrquy.vercel.app/'
     },
     {
         title: 'Game Tetris',
         img: './img/game-tetris.png',
         description: 'Use JavaScript to create Game Tetris',
-        link: 'https://github.com/quyng24/game-tetris'
+        link: 'https://github.com/quyng24/game-tetris',
+        link2: 'https://game-tetris-tau.vercel.app/'
     },
     {
-        title: 'Game Flappy Brith',
-        img: './img/flappy-brith.png',
-        description: 'Use Python3 to create Game Flappy Brith',
-        link: 'https://github.com/quyng24/flappy-bird-game'
-    },
+        title: 'Sales Website',
+        img: './img/sales-website.png',
+        description: 'The sales website handles logic using javascript for basic features',
+        link: 'https://github.com/quyng24/web-gogo',
+        link2: 'https://web-gogo.vercel.app/'
+    }
 ];
 const projectContainer1 = document.querySelector('.projects-1');
 const projectContainer2 = document.querySelector('.projects-2');
@@ -159,7 +171,8 @@ projects1.forEach(project => {
             <h2>${project.title}</h2>
             <img src="${project.img}">
             <p>${project.description}</p>
-            <a class="btn" href="${project.link}">View Details</a>
+            <a class="btn" href="${project.link}">View Code</a>
+            <a class="btn" href="${project.link2}">View Website</a>
         </div>
     `;
     projectContainer1.innerHTML += ProjectCard;
@@ -170,7 +183,8 @@ projects2.forEach(project => {
             <h2>${project.title}</h2>
             <img src="${project.img}">
             <p>${project.description}</p>
-            <a class="btn" href="${project.link}">View Details</a>
+            <a class="btn" href="${project.link}">View Code</a>
+            <a class="btn" href="${project.link2}">View Website</a>
         </div>
     `;
     projectContainer2.innerHTML += ProjectCard;
