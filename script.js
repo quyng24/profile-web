@@ -128,9 +128,9 @@ const projects2 = [
         link2: 'https://game-tictactoe-one.vercel.app/'
     },
     {
-        title: 'Christmas Tree',
-        img: './img/merry-christmas.png',
-        description: 'Use JavaScript to create Christmas Tree',
+        title: 'Spread Sheet',
+        img: './img/excel-web.png',
+        description: 'Use JavaScript to create Spread Sheet',
         link: 'https://github.com/quyng24/merry-christmas',
         link2: 'https://merry-christmas-six-beige.vercel.app/'
     },
@@ -138,8 +138,8 @@ const projects2 = [
         title: 'Weather App',
         img: './img/weather-app-mrquy.png',
         description: 'Use JavaScript to create Weather App',
-        link: 'https://github.com/quyng24/weather-app-mrquy',
-        link2: 'https://weather-app-mrquy.vercel.app/'
+        link: 'https://github.com/quyng24/profile-web',
+        link2: 'https://excel-web-quynguyens-projects-968d49fd.vercel.app/'
     },
     {
         title: 'Music App',
