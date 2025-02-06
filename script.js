@@ -161,6 +161,27 @@ const projects2 = [
         description: 'The sales website handles logic using javascript for basic features',
         link: 'https://github.com/quyng24/web-gogo',
         link2: 'https://web-gogo.vercel.app/'
+    },
+    {
+        title: 'Game Platformer',
+        img: './img/game-platformer.png',
+        description: 'Use canvas HTML and JavaScript to create Game Platformer',
+        link: 'https://github.com/quyng24/game-platformer',
+        link2: 'https://game-platformer-theta.vercel.app/'
+    },
+    {
+        title: 'Heart Animation',
+        img: './img/tym-js.png',
+        description: 'Use canvas HTML and JavaScript to create Heart Animation',
+        link: 'https://github.com/quyng24/tym1',
+        link2: 'https://tym1.vercel.app/'
+    },
+    {
+        title: 'Merry Christmas',
+        img: './img/merry-christmas.png',
+        description: 'Use HTML and CSS to create Christmas Tree',
+        link: 'https://github.com/quyng24/merry-christmas',
+        link2: 'https://merry-christmas-six-beige.vercel.app/'
     }
 ];
 const projectContainer1 = document.querySelector('.projects-1');
