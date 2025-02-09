@@ -77,6 +77,13 @@ tabs.forEach((tab, index) => {
 // show project
 const projects1 = [
     {
+        title: 'Comunity Project',
+        img: './img/community-project.png',
+        description: 'Community Project: Reflect and warn about air pollution',
+        link: 'https://github.com/quyng24/community-project',
+        link2: 'https://community-project-iota.vercel.app/'
+    },
+    {
         title: 'Moving Planet',
         img: './img/hanh-tinh.png',
         description: 'Use css to create moving planet',
