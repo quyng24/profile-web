@@ -77,11 +77,11 @@ tabs.forEach((tab, index) => {
 // show project
 const projects1 = [
     {
-        title: 'Comunity Project',
-        img: './img/community-project.png',
-        description: 'Community Project: Reflect and warn about air pollution',
-        link: 'https://github.com/quyng24/community-project',
-        link2: 'https://community-project-iota.vercel.app/'
+        title: 'Product Card',
+        img: './img/card-animation.png',
+        description: 'Card animation by HTML, CSS',
+        link: 'https://github.com/quyng24/product-card',
+        link2: 'https://product-cart-topaz.vercel.app/'
     },
     {
         title: 'Moving Planet',
@@ -103,6 +103,20 @@ const projects1 = [
         description: 'Some flag samples Viet Nam beautiful',
         link: 'https://github.com/quyng24/co-vn',
         linl2: 'https://co-vn.vercel.app/'
+    },
+    {
+        title: 'Comunity Project',
+        img: './img/community-project.png',
+        description: 'Community Project: Reflect and warn about air pollution',
+        link: 'https://github.com/quyng24/community-project',
+        link2: 'https://community-project-iota.vercel.app/'
+    },
+    {
+        title: 'Chart',
+        img: './img/draw-chart.png',
+        description: 'Create a chart using JavaScript and Chart.js',
+        link: 'https://github.com/quyng24/chart',
+        link2: 'https://chart-psi-one.vercel.app/'
     },
     {
         title: 'To Do List',
