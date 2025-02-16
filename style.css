@@ -114,15 +114,26 @@ body.dark {
 }
 /* content home */
 #home {
+    height: 120vh;
     display: flex;
     justify-content: center;
     align-items: center;
     border-bottom: 2px solid var(--side-bar);
     padding: 50px 0;
+    background-image: url(./img/background-wpf-light.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 .content-home {
     width: 60%;
-    margin-left: 5%;
+    padding: 20px 40px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 30px;
+    border-top: #2c3e50;
+    border-left: #2c3e50;
+    box-shadow: #f4f4f4 0px 20px 30px -10px;
 }
 .content-home p {
     font-size: 30px;
@@ -161,17 +172,6 @@ body.dark {
     font-weight: bold;
     transform: scale(90%);
 }
-.img-home {
-    width: 40%;
-    height: 60vh;
-    margin: 0 20px;
-    border-radius: 20px;
-    background-image: url(./img/avata-1.PNG);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    box-shadow: 0 0 30px var(--side-bar);
-}
 /* content about me */
 #about {
     border-bottom: 2px solid var(--side-bar);
@@ -181,7 +181,7 @@ body.dark {
     height: 100%;
     border-radius: 20px;
     margin: 0 50px;
-    background-image: url(./img/imgstory.jpeg);
+    background-image: url(./img/avata-1.PNG);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -526,15 +526,23 @@ body.dark {
     transform: translateY(0);
     opacity: 1;
 }
-@layer compnents {
-    .project-card {
-        animation: 0.5s ease-in both;
-        animation-timeline: view();
-        animation-range: entry;
-    }
-    .project-card {
-        animation-name: zoomin;
-    }
+.left {
+    transform: translateX(-15%);
+    opacity: 0;
+    transition: 1s;
+}
+.left.start {
+    transform: translateX(0);
+    opacity: 1;
+}
+.right {
+    transform: translateX(15%);
+    opacity: 0;
+    transition: 1s;
+}
+.right.start {
+    transform: translateX(0);
+    opacity: 1;
 }
 @keyframes blink {
     0%, 100% {
@@ -544,14 +552,14 @@ body.dark {
         border-right: 4px solid transparent;
     }
 }
-@keyframes zoomin {
-    0% {
+@keyframes appear {
+    from {
         opacity: 0;
-        transform: scale(0);
+        scale: 0.4;
     }
-    100% {
+    to {
         opacity: 1;
-        transform: scale(1);
+        scale: 1;
     }
 }
 @media (max-width: 768px) {

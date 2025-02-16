@@ -1,7 +1,9 @@
 //click linght dark mode
-const btnDark = document.querySelector('.nut2 input');
-const body = document.querySelector('body');
-const listA = document.querySelectorAll('.side-bar ul a li');
+const $ = document.querySelector.bind(document);
+const $$ = document.querySelectorAll.bind(document);
+const btnDark = $('.nut2 input');
+const body = $('body');
+const listA = $$('.side-bar ul a li');
 btnDark.addEventListener('click', () => {
     body.classList.toggle('dark');
 });
@@ -14,7 +16,7 @@ listA.forEach(list => {
 })
 
 // text animation effect
-var thep = document.querySelector('#text-content-home');
+var thep = $('#text-content-home');
 var originContent = thep.innerHTML;
 var index = 0;
 var dk = true;
@@ -35,7 +37,7 @@ setInterval(function() {
 }, time)
 
 // animation
-var animationElements = document.querySelectorAll('.show-on-scroll');
+var animationElements = $$('.show-on-scroll');
 function isElInWindow(element) {
     var rect = element.getClientRects()[0];
     var heightScreen = window.innerHeight;
@@ -53,9 +55,22 @@ function checkAnimation() {
 }
 window.onscroll = checkAnimation;
 
+const fadeOnScroll = (selector, speed = 300, translateY = 50) => {
+    document.addEventListener("scroll", function () {
+      let elements = document.querySelectorAll(selector);
+  
+      elements.forEach((element) => {
+        let scrollPosition = window.scrollY;
+        let opacityValue = Math.max(1 - scrollPosition / speed, 0);
+        let translateValue = Math.min(scrollPosition / 2, translateY);
+  
+        element.style.opacity = opacityValue;
+        element.style.transform = `translateY(${translateValue}px)`;
+      });
+    });
+  }
+fadeOnScroll(".content-home", 400, 50);
 // tab project overview
-const $ = document.querySelector.bind(document);
-const $$ = document.querySelectorAll.bind(document);
 const tabs = $$('.tab-item');
 const panes = $$('.tab-pane');
 const tabActive = $('.tab-item.active');
@@ -77,11 +92,11 @@ tabs.forEach((tab, index) => {
 // show project
 const projects1 = [
     {
-        title: 'Product Card',
-        img: './img/card-animation.png',
-        description: 'Card animation by HTML, CSS',
-        link: 'https://github.com/quyng24/product-card',
-        link2: 'https://product-cart-topaz.vercel.app/'
+        title: 'Softy Pinko',
+        img: './img/web-react.png',
+        description: 'Create website by ReactJS',
+        link: 'https://github.com/quyng24/softy-pinko',
+        link2: 'https://softy-pinko-5wk2.onrender.com/'
     },
     {
         title: 'Moving Planet',
@@ -205,11 +220,11 @@ const projects2 = [
         link2: 'https://merry-christmas-six-beige.vercel.app/'
     }
 ];
-const projectContainer1 = document.querySelector('.projects-1');
-const projectContainer2 = document.querySelector('.projects-2');
+const projectContainer1 = $('.projects-1');
+const projectContainer2 = $('.projects-2');
 projects1.forEach(project => {
     const ProjectCard = `
-        <div class="project-card show-on-scroll zoom">
+        <div class="project-card">
             <h2>${project.title}</h2>
             <img src="${project.img}">
             <p>${project.description}</p>
@@ -221,7 +236,7 @@ projects1.forEach(project => {
 });
 projects2.forEach(project => {
     const ProjectCard = `
-        <div class="project-card show-on-scroll zoom">
+        <div class="project-card">
             <h2>${project.title}</h2>
             <img src="${project.img}">
             <p>${project.description}</p>
