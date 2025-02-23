@@ -218,6 +218,13 @@ const projects2 = [
         description: 'Use HTML and CSS to create Christmas Tree',
         link: 'https://github.com/quyng24/merry-christmas',
         link2: 'https://merry-christmas-six-beige.vercel.app/'
+    },
+    {
+        title: 'Shop Online',
+        img: './img/shop-online.png',
+        description: 'Create Shop Online Basic by React Dom + React Router',
+        link: 'https://github.com/quyng24/shop-online',
+        link2: 'https://shop-online-jle2.onrender.com/'
     }
 ];
 const projectContainer1 = $('.projects-1');
