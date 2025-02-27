@@ -225,6 +225,13 @@ const projects2 = [
         description: 'Create Shop Online Basic by React Dom + React Router',
         link: 'https://github.com/quyng24/shop-online',
         link2: 'https://shop-online-jle2.onrender.com/'
+    },
+    {
+        title: 'Web Quiz Topics Font-end',
+        img: './img/web-quiz.png',
+        description: 'Create Web Quiz Topics by React',
+        link: 'https://github.com/quyng24/quiz-fe-ngq',
+        link2: 'https://quiz-fe-ngq.onrender.com'
     }
 ];
 const projectContainer1 = $('.projects-1');
