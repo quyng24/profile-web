@@ -168,14 +168,14 @@ const projects2 = [
         img: './img/excel-web.png',
         description: 'Use JavaScript to create Spread Sheet',
         link: 'https://github.com/quyng24/merry-christmas',
-        link2: 'https://merry-christmas-six-beige.vercel.app/'
+        link2: 'https://excel-web.vercel.app/'
     },
     {
         title: 'Weather App',
         img: './img/weather-app-mrquy.png',
         description: 'Use JavaScript to create Weather App',
         link: 'https://github.com/quyng24/profile-web',
-        link2: 'https://excel-web-quynguyens-projects-968d49fd.vercel.app/'
+        link2: 'https://weather-app-mrquy.vercel.app/'
     },
     {
         title: 'Music App',
