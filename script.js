@@ -283,3 +283,11 @@ if (window.matchMedia("(max-width: 768px)").matches) {
 } else {
     console.log("You are not on a mobile device.");
 }
+// close side bar when scrolling web page
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 0) {
+        siderBarMobile.classList.remove('open');
+    } else {
+        siderBarMobile.classList.add('hide');
+    }
+});
