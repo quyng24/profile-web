@@ -121,22 +121,16 @@ body.dark {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: row-reverse;
     border-bottom: 2px solid var(--side-bar);
-    padding: 50px 0;
-    background-image: url(./img/background-wpf-light.JPG);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    padding: 50px 20px;
+    background: var(--background);
 }
 .content-home {
-    width: 60%;
     padding: 20px 40px;
-    background: rgba(255, 255, 255, 0.6);
     border-radius: 30px;
     border-top: #2c3e50;
     border-left: #2c3e50;
-    box-shadow: #f4f4f4 0px 20px 30px -10px;
 }
 .content-home p {
     font-size: 30px;
@@ -582,6 +576,8 @@ footer p {
     .side-bar.open {
         width: 70%;
         opacity: 1;
+        z-index: 2;
+        height: 100vh;
     }
     .side-bar .heading-sider-bar {
         display: flex;
@@ -607,16 +603,12 @@ footer p {
     }
     #home {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
     .content-home {
         width: 100%;
         padding: 0 10px;
-    }
-    .img-home {
-        width: 80%;
-        height: 50vh;
-        margin: 20% 0;
+        margin: 0 auto;
     }
     .open-sider-bar {
         display: flex;
@@ -669,6 +661,9 @@ footer p {
     .skill-item {
         margin: 0;
         padding: 0 20px;
+    }
+    footer {
+        margin: 0;
     }
     /* animation  */
     .top-to-bottom {
