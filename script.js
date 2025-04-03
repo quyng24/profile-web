@@ -232,6 +232,13 @@ const projects2 = [
         description: 'Create Web Quiz Topics by React',
         link: 'https://github.com/quyng24/quiz-fe-ngq',
         link2: 'https://quiz-fe-ngq.onrender.com'
+    },
+    {
+        title: 'Website Orders Noodle',
+        img: './img/orders-noodle.png',
+        description: 'Create Website Orders Noodle by React for Frontend and Firestore Database for Backend',
+        link: 'https://github.com/quyng24/orders-noodle',
+        link2: 'https://orders-noodle.onrender.com/'
     }
 ];
 const projectContainer1 = $('.projects-1');
